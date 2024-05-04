@@ -20,7 +20,7 @@ const EditSubCategory = () => {
   }
   const handleFetch = async () => {
     try {
-      const res = await axios.get('http://localhost:8000/api/subcategory/'+_id);
+      const res = await axios.get('https://prestigebackend.onrender.com/api/subcategory/'+_id);
       setData(res.data.data)
     } catch (error) {
       console.error(error)
@@ -30,7 +30,7 @@ const EditSubCategory = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const submitResponse = await axios.put("http://localhost:8000/api/subcategory/" + _id, data);
+      const submitResponse = await axios.put("https://prestigebackend.onrender.com/api/subcategory/" + _id, data);
       toast.success("Sub Category Updated Successfully")
       window.location.href = '/all-sub-category'
     } catch (error) {

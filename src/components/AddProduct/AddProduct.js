@@ -24,7 +24,7 @@ const AddProduct = () => {
 
   const getCategoryApi = async () => {
     try {
-      let res = await axios.get("http://localhost:8000/api/category")
+      let res = await axios.get("https://prestigebackend.onrender.com/api/category")
       console.log(res)
       setCate(res.data.data)
     } catch (error) {
@@ -33,7 +33,7 @@ const AddProduct = () => {
   }
   const getSubCategoryApi = async () => {
     try {
-      let res = await axios.get("http://localhost:8000/api/subcategory")
+      let res = await axios.get("https://prestigebackend.onrender.com/api/subcategory")
       console.log(res)
       setSubCate(res.data.data)
     } catch (error) {
@@ -67,7 +67,7 @@ const AddProduct = () => {
   const handleSubmit = async (e) => {
     e.preventDefault()
     try {
-      let res = await axios.post("http://localhost:8000/api/product", formData)
+      let res = await axios.post("https://prestigebackend.onrender.com/api/product", formData)
       console.log(res);
     } catch (error) {
       console.log(error);

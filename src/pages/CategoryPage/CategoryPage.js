@@ -9,7 +9,7 @@ const CategoryPage = () => {
 
     const handleFetch = async () => {
         try {
-            const res = await axios.get('http://localhost:8000/api/category');
+            const res = await axios.get('https://prestigebackend.onrender.com/api/category');
             setCategory(res.data.data)
         } catch (error) {
             console.error(error)
@@ -19,7 +19,7 @@ const CategoryPage = () => {
 
     const hadndleDelete = async (_id) => {
         try {
-            const res = await axios.delete("http://localhost:8000/api/category/" + _id);
+            const res = await axios.delete("https://prestigebackend.onrender.com/api/category/" + _id);
             console.log(res.data)
             toast.success("Product Deleted Successfully")
             handleFetch()

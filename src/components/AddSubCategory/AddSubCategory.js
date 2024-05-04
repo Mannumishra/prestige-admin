@@ -22,7 +22,7 @@ const AddSubCategory = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await axios.post('http://localhost:8000/api/subcategory',data);
+      const response = await axios.post('https://prestigebackend.onrender.com/api/subcategory',data);
       console.log(response)
       toast.success("Sub Category Added Successfully !!")
       window.location.href = '/all-sub-category'
@@ -34,7 +34,7 @@ const AddSubCategory = () => {
 
   const handleCategory = async () => {
     try {
-      const res = await axios.get('http://localhost:8000/api/category');
+      const res = await axios.get('https://prestigebackend.onrender.com/api/category');
       console.log(res);
       setCategory(res.data.data)
     } catch (error) {
