@@ -71,10 +71,10 @@ const CategoryPage = () => {
                                             <td>{index + 1}</td>
                                             <td>{item.categoryname}</td>
                                             <td>{item.description}</td>
-                                            <td><img src={item.image} alt="" style={{ maxWidth: "100%", height: "auto" }} /></td>
-                                            <td><img src={item.image1} alt="" style={{ maxWidth: "100%", height: "auto" }} /></td>
-                                            <td><img src={item.image2} alt="" style={{ maxWidth: "100%", height: "auto" }} /></td>
-                                            <td><img src={item.image3} alt="" style={{ maxWidth: "100%", height: "auto" }} /></td>
+                                            <td><img src={item.image} alt="" className="img-fluid" /></td>
+                                            <td><img src={item.image1} alt="" className="img-fluid" /></td>
+                                            <td><img src={item.image2} alt="" className="img-fluid" /></td>
+                                            <td><img src={item.image3} alt="" className="img-fluid" /></td>
                                             <td className='upd-btns'>
                                                 <Link to={`/edit-category/${item._id}`} className='upd-btns update'><i className="fa-solid fa-pen-to-square"></i></Link>
                                                 <button onClick={() => { handleDelete(item._id) }} className='upd-btns delete'><i className="fa-solid fa-trash-arrow-up"></i></button>
@@ -84,10 +84,10 @@ const CategoryPage = () => {
                                 </tbody>
                             </table>
                         </div>
-
                     </div>
                 </div>
             </section>
+
         </>
     )
 }
