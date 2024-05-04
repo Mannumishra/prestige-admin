@@ -36,7 +36,7 @@ const LoginPage = () => {
     <>
       <div className="row user-login mx-1">
         <div className="col-md-12 text-center">
-          <img src={logo} height="150" style={{objectFit:'contain'}} alt="company-logo" />
+          <img src="https://catalog.wlimg.com/1/2990960/other-images/12569-comp-image.png" height="150" style={{objectFit:'contain'}} alt="company-logo" />
         </div>
         <div className="col-12 text-center">
           <form onSubmit={handleSubmit}>
