@@ -17,7 +17,7 @@ const CategoryPage = () => {
     }
 
 
-    const hadndleDelete = async (_id) => {
+    const handleDelete = async (_id) => {
         try {
             const res = await axios.delete("https://prestigebackend.onrender.com/api/category/" + _id);
             console.log(res.data)

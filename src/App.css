@@ -124,6 +124,12 @@ ol, ul {
 .small-table table td{
 
 }
+@media screen and(max-width:768px) {
+  .small-table table {
+    font-size: 0.9rem;
+    min-width: 768px;
+  }
+}
 
 
 
