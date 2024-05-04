@@ -1,0 +1,93 @@
+
+/* ---------- Login [Page]  ------  */
+.user-login{
+    background: #f3f8fe;
+    border-radius: 15px;
+}
+.user-login img{
+    width: 40%;
+}
+.user-login form{
+    width: 50%;
+    margin: auto;
+}
+.user-login .single-field{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    align-items: start;
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+    gap: 0.5rem;
+    width: 100%;
+}
+.user-login .single-field>div{
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    align-items: center;
+}
+.user-login .single-field input{
+    width: 98%;
+    border: none;
+    outline: none;
+}
+
+.login-submit-btn{
+    color: white;
+    border: none;
+    outline: none;
+    background: #3d4584;
+    border-radius: 50rem;
+    padding: 0.5rem 1rem;
+    width: 50%;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    transition: all 400ms ease-in;
+}
+.login-submit-btn:hover{
+    background: #3d4584db;
+}
+.forget a{
+    text-decoration: underline !important;
+    color: black;
+}
+.single-field.main-otp-div{
+    padding: 0rem 0rem;
+    background: transparent !important;
+    margin-bottom: 0rem;
+    float: left;
+}
+.get-otp-btn{
+    color: white;
+    border: none;
+    outline: none;
+    background: #3d4584;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    transition: all 400ms ease-in;
+    display: block;
+    float: right;
+}
+
+@media only screen and (max-width: 800px){
+    .user-login img {
+        width: 60%;
+    }
+    .user-login form {
+        width: 80%;
+        margin: auto;
+    }
+}
+@media only screen and (max-width: 500px){
+    .user-login img {
+        width: 100%;
+    }
+    .user-login form {
+        width: 100%;
+        margin: auto;
+    }
+}
