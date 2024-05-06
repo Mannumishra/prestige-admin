@@ -9,6 +9,7 @@ const CategoryPage = () => {
 
     const handleFetch = async () => {
         try {
+            // const res = await axios.get('http://localhost:8000/api/category');
             const res = await axios.get('https://prestigebackend.onrender.com/api/category');
             setCategory(res.data.data)
         } catch (error) {
