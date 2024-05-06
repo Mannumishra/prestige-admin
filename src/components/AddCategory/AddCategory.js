@@ -42,7 +42,7 @@ const AddCategory = () => {
       toast.success("Category Added Successfully !!")
       window.location.href = '/all-category'
     } catch (error) {
-      console.log('Error : ', error)
+      console.log(error)
       // toast.error(error.response.data.message)
     }
   }
