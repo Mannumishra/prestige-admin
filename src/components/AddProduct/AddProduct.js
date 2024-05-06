@@ -69,6 +69,9 @@ const AddProduct = () => {
     try {
       let res = await axios.post("https://prestigebackend.onrender.com/api/product", formData)
       console.log(res);
+      if(res.status===200){
+        window.location.href="/all-products"
+      }
     } catch (error) {
       console.log(error);
     }
