@@ -8,7 +8,7 @@ const Contactpage = () => {
 
     const getApiData = async () => {
         try {
-            let res = await axios.get("https://prestigebackend.onrender.com/api/contact")
+            let res = await axios.get("https://www.api.prestigeindustries.co.in/api/contact")
             console.log(res);
             setData(res.data.data)
         } catch (error) {

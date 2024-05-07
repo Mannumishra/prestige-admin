@@ -13,7 +13,7 @@ const SubCategoryPage = () => {
 
     const handleFetch = async () => {
         try {
-            const res = await axios.get("https://prestigebackend.onrender.com/api/subcategory");
+            const res = await axios.get("https://www.api.prestigeindustries.co.in/api/subcategory");
             setSubCategory(res.data.data)
         } catch (error) {
             console.error(error)
@@ -22,7 +22,7 @@ const SubCategoryPage = () => {
 
     const hadndleDelete = async (_id) => {
         try {
-            const res = await axios.delete(`https://prestigebackend.onrender.com/api/subcategory/${_id}`);
+            const res = await axios.delete(`https://www.api.prestigeindustries.co.in/api/subcategory/${_id}`);
             toast.success("SubCategory Deleted Successfully")
             handleFetch()
         } catch (error) {
