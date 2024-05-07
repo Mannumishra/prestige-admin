@@ -67,7 +67,7 @@ const AddProduct = () => {
   const handleSubmit = async (e) => {
     e.preventDefault()
     try {
-      let res = await axios.post("https://www.api.prestigeindustries.co.in/api/product", formData)
+      let res = await axios.post("https://api.prestigeindustries.co.in", formData)
       console.log(res);
       if(res.status===200){
         window.location.href="/all-products"

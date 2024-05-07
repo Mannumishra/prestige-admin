@@ -9,7 +9,7 @@ const ProductPage = () => {
 
     const handleFetch = async () => {
         try {
-            const res = await axios.get('https://www.api.prestigeindustries.co.in/api/product')
+            const res = await axios.get('https://api.prestigeindustries.co.in')
             console.log(res.data.data)
             setProduct(res.data.data)
         } catch (error) {
@@ -20,7 +20,7 @@ const ProductPage = () => {
 
     const hadndleDelete = async (_id) => {
         try {
-            const res = await axios.delete("https://www.api.prestigeindustries.co.in/api/product/" + _id);
+            const res = await axios.delete("https://api.prestigeindustries.co.in/" + _id);
             toast.success("Product Deleted Successfully")
             console.log(res.data)
             handleFetch()

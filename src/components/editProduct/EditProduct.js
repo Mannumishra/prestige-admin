@@ -43,7 +43,7 @@ const EditProduct = () => {
   }
   const getProductApi = async () => {
     try {
-      let res = await axios.get("https://www.api.prestigeindustries.co.in/api/product/" + _id)
+      let res = await axios.get("https://api.prestigeindustries.co.in/" + _id)
       console.log(res)
       setData(res.data.data)
     } catch (error) {
@@ -74,7 +74,7 @@ const EditProduct = () => {
   const handleSubmit = async (e) => {
     e.preventDefault()
     try {
-      let res = await axios.put("https://www.api.prestigeindustries.co.in/api/product/" + _id, formData)
+      let res = await axios.put("https://api.prestigeindustries.co.in/" + _id, formData)
       if (res.status === 200) {
         window.location.href = "/all-products"
       }
