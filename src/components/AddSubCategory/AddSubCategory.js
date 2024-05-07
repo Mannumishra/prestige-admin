@@ -22,7 +22,7 @@ const AddSubCategory = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await axios.post('https://www.api.prestigeindustries.co.in/api/subcategory',data);
+      const response = await axios.post('https://api.prestigeindustries.co.in/api/subcategory',data);
       console.log(response)
       toast.success("Sub Category Added Successfully !!")
       window.location.href = '/all-sub-category'
@@ -34,7 +34,7 @@ const AddSubCategory = () => {
 
   const handleCategory = async () => {
     try {
-      const res = await axios.get('https://www.api.prestigeindustries.co.in/api/category');
+      const res = await axios.get('https://api.prestigeindustries.co.in/api/category');
       console.log(res);
       setCategory(res.data.data)
     } catch (error) {

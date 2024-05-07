@@ -10,7 +10,7 @@ const CategoryPage = () => {
     const handleFetch = async () => {
         try {
             // const res = await axios.get('http://localhost:8000/api/category');
-            const res = await axios.get('https://www.api.prestigeindustries.co.in/api/category');
+            const res = await axios.get('https://api.prestigeindustries.co.in/api/category');
             setCategory(res.data.data)
         } catch (error) {
             console.error(error)
@@ -20,7 +20,7 @@ const CategoryPage = () => {
 
     const handleDelete = async (_id) => {
         try {
-            const res = await axios.delete("https://www.api.prestigeindustries.co.in/api/category/" + _id);
+            const res = await axios.delete("https://api.prestigeindustries.co.in/api/category/" + _id);
             console.log(res.data)
             toast.success("Product Deleted Successfully")
             handleFetch()

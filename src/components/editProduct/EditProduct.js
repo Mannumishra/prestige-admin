@@ -25,7 +25,7 @@ const EditProduct = () => {
   })
   const getCategoryApi = async () => {
     try {
-      let res = await axios.get("https://www.api.prestigeindustries.co.in/api/category")
+      let res = await axios.get("https://api.prestigeindustries.co.in/api/category")
       console.log(res)
       setCate(res.data.data)
     } catch (error) {
@@ -34,7 +34,7 @@ const EditProduct = () => {
   }
   const getSubCategoryApi = async () => {
     try {
-      let res = await axios.get("https://www.api.prestigeindustries.co.in/api/subcategory")
+      let res = await axios.get("https://api.prestigeindustries.co.in/api/subcategory")
       console.log(res)
       setSubCate(res.data.data)
     } catch (error) {

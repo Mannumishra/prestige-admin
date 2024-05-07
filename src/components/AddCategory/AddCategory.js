@@ -37,7 +37,7 @@ const AddCategory = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await axios.post('https://www.api.prestigeindustries.co.in/api/category', formData);
+      const response = await axios.post('https://api.prestigeindustries.co.in/api/category', formData);
       console.log(response)
       toast.success("Category Added Successfully !!")
       window.location.href = '/all-category'
